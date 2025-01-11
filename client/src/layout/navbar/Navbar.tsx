@@ -15,7 +15,6 @@ export const Navbar = () => {
 
   return (
     <nav className="bg-gray-800 text-white py-4 px-8 flex items-center justify-between">
-      {/* Left Side */}
       <div className="flex space-x-8">
         <Link to="/" className="text-xl font-bold">
           Website Name
@@ -30,15 +29,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Right Side */}
       <div className="flex items-center space-x-6">
-        {/* <div className="text-lg">{isLoggedIn ? "User Info" : "Guest"}</div> */}
-        {/* <button
-          onClick={toggleLogin}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
-          {isLoggedIn ? "Logout" : "Login"}
-        </button> */}
         {isAuthenticated ? (
           <div className="flex items-center text-lg hover:text-gray-300">
             <img

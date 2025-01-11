@@ -51,7 +51,6 @@ const menuListBeforeLogin = () => {
   );
 };
 const MenuListAfterLogin = () => {
-  // const { user } = useSelector((state: RootState) => state.user);
   const dispatch = useDispatch();
   const hanleLogoutUser = () => {
     dispatch(logout());
